@@ -15,6 +15,9 @@ main {
     max-width: 580px;
     width: 90%;
     margin: auto;
+
+    display: grid;
+    gap: 24px;
 }
 
 section {
@@ -30,6 +33,19 @@ section {
         letter-spacing: -0.18px;
     }
 
-ul {
-    list-style: none;
+    section ul {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channel-list img {
+    width: 70px;
+    border-radius: 50%;
 }
