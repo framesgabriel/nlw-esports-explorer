@@ -5,3 +5,31 @@ body {
     background-repeat: no-repeat;
     background-color: #121214;
 }
+
+    body * {
+        font-family: 'Inter', sans-serif;
+        line-height: 160%;
+    }
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    color: white;
+}
+
+    section h2 {
+        letter-spacing: -0.47px;
+    }
+
+    section p {
+        color: #A1A1AA;
+        letter-spacing: -0.18px;
+    }
+
+ul {
+    list-style: none;
+}
