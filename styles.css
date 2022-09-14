@@ -15,6 +15,7 @@ main {
     max-width: 580px;
     width: 90%;
     margin: auto;
+    margin-top: 32px;
 
     display: grid;
     gap: 24px;
@@ -22,7 +23,18 @@ main {
 
 section {
     color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.5%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
 }
+
+    section div {
+        background-color: #2A2634;
+        border-radius: 8px;
+
+        padding: 32px;
+        padding-top: 24px;
+    }
 
     section h2 {
         letter-spacing: -0.47px;
@@ -34,10 +46,12 @@ section {
     }
 
     section ul {
-        list-style: none;
-        display: flex;
-        gap: 16px;
         margin-top: 24px;
+        list-style: none;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
     }
 
 .games-list img {
