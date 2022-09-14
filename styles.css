@@ -23,7 +23,13 @@ header {
 
         border-radius: 50%;
         background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.5%, #E2D45C 100%);
+
+        transition: transform .3s;
     }
+
+        header div:hover {
+            transform: scale(1.1);
+        }
 
         header div img {
             width: 100%;
@@ -71,6 +77,14 @@ section {
         flex-wrap: wrap;
         gap: 16px;
     }
+
+        section ul li {
+            transition: transform .3s;
+        }
+
+            section ul li:hover {
+                transform: scale(1.1);
+            }
 
 .games-list img {
     width: 90px;
