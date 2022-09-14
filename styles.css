@@ -11,11 +11,29 @@ body {
         line-height: 160%;
     }
 
+header {
+    margin-top: 32px;
+}
+
+    header div {
+        width: 120px;
+        margin: auto;
+        padding: 4px;
+        display: flex;
+
+        border-radius: 50%;
+        background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.5%, #E2D45C 100%);
+    }
+
+        header div img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
 main {
     max-width: 580px;
     width: 90%;
-    margin: auto;
-    margin-top: 32px;
+    margin: 32px auto;
 
     display: grid;
     gap: 24px;
@@ -62,4 +80,5 @@ section {
 .channel-list img {
     width: 70px;
     border-radius: 50%;
+    border: 1px solid #443E54;
 }
