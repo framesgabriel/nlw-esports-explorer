@@ -12,7 +12,10 @@ body {
     }
 
 header {
-    margin-top: 32px;
+    padding-top: 32px;
+
+    /* Quando precisamos que o CSS faça algúm cálculo por nós: */
+    height: calc(120px + 32px);
 }
 
     header div {
@@ -96,3 +99,51 @@ section {
     border-radius: 50%;
     border: 1px solid #443E54;
 }
+
+/*#region ANIMATIONS*/
+header div {
+    /* O backwards aplica as props do from (da animation) para depois ir para as props do to */
+    animation: fromTop .7s .2s backwards;
+}
+
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+    /* Seleciona o primeiro filho section do pai main */
+    main section:nth-child(1) {
+        animation-delay: 0;
+    }
+
+    /* Seleciona o segundo filho section do pai main */
+    main section:nth-child(2) {
+        animation-delay: .4s;
+    }
+
+    /* Seleciona o terceiro filho section do pai main */
+    main section:nth-child(3) {
+        animation-delay: .8s;
+    }
+
+/* O keyframes serve para dar início à animação */
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*#endregion ANIMATIONS*/
